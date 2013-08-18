@@ -56,16 +56,17 @@
             <groupId>net.citizensnpcs</groupId>
             <artifactId>citizens</artifactId>
             <version>${citizensapi.version}</version>
-            <type>jar</type>
-            <scope>compile</scope>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/citizens-2.0.9-SNAPSHOT.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>net.milkbowl.vault</groupId>
             <artifactId>Vault</artifactId>
             <version>${vault.version}</version>
-            <type>jar</type>
-            <scope>provided</scope>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/Vault-1.2.26.jar</systemPath>
         </dependency>
+
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
