@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="citizensapi-2.0.9-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../libs/citizensapi-2.0.9-SNAPSHOT.jar!/" />
+      <root url="jar://E:/libs/citizensapi-2.0.9-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

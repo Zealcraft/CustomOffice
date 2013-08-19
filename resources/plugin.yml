@@ -1,0 +1,6 @@
+name: CustomOffice
+author: Zealcraft
+version: ${build.version}
+main: net.zealcraft.CustomOfficePlugin
+depend:
+  - Citizens

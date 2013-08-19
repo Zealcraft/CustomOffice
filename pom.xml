@@ -16,10 +16,19 @@
         <craftbukkit.version>LATEST</craftbukkit.version>
         <citizensapi.version>2.0.9-SNAPSHOT</citizensapi.version>
         <vault.version>1.2.26</vault.version>
-        <powermock.version>1.4.12</powermock.version>
-        <build.number>Unknown</build.number>
-        <BUILD_NUMBER>Unknown</BUILD_NUMBER>
     </properties>
+
+    <profiles>
+        <profile>
+         <id>build</id>
+            <activation>
+               <activeByDefault>true</activeByDefault>
+            </activation>
+         <properties>
+                <build.version>${project.version}</build.version>
+            </properties>
+        </profile>
+    </profiles>
 
     <repositories>
         <repository>
@@ -88,7 +97,7 @@
             <resource>
                 <targetPath>.</targetPath>
                 <filtering>true</filtering>
-                <directory>${basedir}/src/main/resources/</directory>
+                <directory>${basedir}/resources/</directory>
                 <includes>
                     <include>plugin.yml</include>
                 </includes>
@@ -104,11 +113,7 @@
                     <licenseName>bsd</licenseName>
                     <licenseResolver>${project.baseUri}/src/license</licenseResolver>
                     <inceptionYear>2013</inceptionYear>
-
-
-                        <organizationName>Shan Meunier Bernard &lt;shan@sbernard.info&gt;, Simon Bastien-Filiatrault &lt;root@gopoi.net&gt;</organizationName>
-
-
+                    <organizationName>Shan Meunier Bernard &lt;shan@sbernard.info&gt;, Simon Bastien-Filiatrault &lt;root@gopoi.net&gt;</organizationName>
                 </configuration>
                 <executions>
                     <execution>
