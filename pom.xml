@@ -89,5 +89,36 @@
                 </includes>
             </resource>
         </resources>
+
+         <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <version>1.5</version>
+                <configuration>
+                    <licenseName>bsd</licenseName>
+                    <licenseResolver>${project.baseUri}/src/license</licenseResolver>
+                    <inceptionYear>2013</inceptionYear>
+
+
+                        <organizationName>Shan Meunier Bernard &lt;shan@sbernard.info&gt;, Simon Bastien-Filiatrault &lt;root@gopoi.net&gt;</organizationName>
+
+
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>first</id>
+
+                        <goals>
+                            <goal>update-file-header</goal>
+
+                        </goals>
+
+                        <phase>process-sources</phase>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
     </build>
 </project>
